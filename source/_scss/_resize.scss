@@ -4,3 +4,8 @@
     height: 350px;
   }
 }
+@media (max-width: 736px) {
+  .photos .gallery-row div {
+    margin: 3vw;
+  }
+}

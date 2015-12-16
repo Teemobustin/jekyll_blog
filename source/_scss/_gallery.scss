@@ -1,0 +1,31 @@
+.photos .container {
+  max-width: 65em;
+}
+
+.gallery-row {
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+}
+.gallery-row div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 200px;
+  margin: 0 1vw;
+  margin-bottom: 1vw;
+}
+.gallery-row div img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 400px) {
+  .gallery-row div { margin: 0; }
+  .gallery-row { padding: 0; }
+}
