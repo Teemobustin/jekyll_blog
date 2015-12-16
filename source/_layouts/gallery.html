@@ -1,0 +1,32 @@
+{% strip %}<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+
+  </head>
+  <body class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %}">
+    <main class="container">
+      <div class="gallery-row">
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-1.jpg" alt="" /></div>
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-2.jpg" alt=""></div>
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-3.jpg" alt=""></div>
+      </div>
+
+      <div class="gallery-row">
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-3.jpg" alt="" /></div>
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-2.jpg" alt=""></div>
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-1.jpg" alt=""></div>
+      </div>
+
+      <div class="gallery-row">
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-3.jpg" alt="" /></div>
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-2.jpg" alt=""></div>
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-1.jpg" alt=""></div>
+      </div>
+      
+      {% include footer.html %}
+    </main>
+
+    {% include github-corner.html %}
+  </body>
+</html>{% endstrip %}
