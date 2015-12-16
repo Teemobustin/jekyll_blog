@@ -27,3 +27,7 @@ $gutter-padding: ($gutter-width / 2) !default;
 $screen-phone   : 30em !default;
 $screen-tablet  : 37em !default;
 $screen-desktop : 56em !default;
+
+.hidden {
+  display: none !important;
+}
