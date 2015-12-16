@@ -45,7 +45,11 @@
 }
 .category-act {
   @extend .picture-frame;
-  border-radius: 10%;
+  border-radius: 50%;
+}
+.category-movie {
+  @extend .picture-frame;
+  border-radius: 50%;
 }
 .category-content {
   position: relative;
