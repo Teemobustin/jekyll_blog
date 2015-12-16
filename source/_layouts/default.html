@@ -1,0 +1,21 @@
+{% strip %}<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+
+  </head>
+  <body class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %}">
+
+    <main class="container">
+
+        <section class="main-content">
+          {{ content }}
+        </section>
+        {% include pagination.html %}
+        {% include footer.html %}
+
+    </main>
+
+    {% include github-corner.html %}
+  </body>
+</html>{% endstrip %}

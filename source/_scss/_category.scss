@@ -1,0 +1,65 @@
+/////picture-frame/////
+.picture-frame {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  margin-left: -15px;
+  margin-top: -15px;
+}
+
+
+
+#category {
+  position: relative;
+  padding-top: 1em;
+}
+#category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: $primary-color;
+  }
+
+.category-block {
+  position: relative;
+  min-height: 100px;
+  h3:hover, h3:focus {
+    cursor: pointer;
+    transition: color .2s linear;
+    color: rgba(203,26,96,0.7)
+  }
+}
+.category-css {
+  @extend .picture-frame;
+  border-radius: 50%;
+}
+.category-photos {
+  @extend .picture-frame;
+  border-radius: 20%;
+}
+.category-act {
+  @extend .picture-frame;
+  border-radius: 10%;
+}
+.category-content {
+  position: relative;
+  margin-left: 50px;
+  background: white;
+  border-radius: 0.25em;
+  padding: 1em;
+  box-shadow: 0 3px 0 #d7e4ed;
+}
+svg::before {
+  position: absolute;
+  width: 20%;
+  right: 5%;
+  top: 50%;
+  content: '';
+  border-bottom: 10px dotted $primary-color;
+}
