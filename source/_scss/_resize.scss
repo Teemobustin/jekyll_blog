@@ -9,3 +9,25 @@
     margin: 3vw;
   }
 }
+@media only screen and (min-width: 1170px) {
+  #category {
+    .category-content {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 45%;
+    }
+    .category-block:nth-child(even) .category-content {
+      float: right;
+    }
+    .category-block:nth-child(odd) .category-content::before {
+      left: 100%;
+      border-color: transparent;
+      border-left-color: white;
+    }
+    .category-css, .category-photos, .category-act, .category-movie, {
+      left: 50%;
+      margin-left: -20px;
+    }
+
+  }
+}
