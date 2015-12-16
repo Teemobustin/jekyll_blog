@@ -1,0 +1,16 @@
+{% strip %}<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+
+  </head>
+  <body class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %}">
+    <main class="container">
+    <iframe src="https://mapsengine.google.com/map/embed?mid=zlZNw7-9EW4M.k_uENPEf1TNs"></iframe>  
+
+      {% include footer.html %}
+    </main>
+
+    {% include github-corner.html %}
+  </body>
+</html>{% endstrip %}
