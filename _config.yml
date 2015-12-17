@@ -19,7 +19,7 @@ email: kathyluj@hotmail.com
 baseurl: "/porfolio" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com"
 url: "http://nandomoreira.me/lora"
-repository: "https://github.com/nandomoreirame/lora"
+repository: "https://github.com/Teemobustin/jekyll_blog"
 disqus_shortname: "fernandomoreira"
 google_analytics: UA-52446115-1
 
