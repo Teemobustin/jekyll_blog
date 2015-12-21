@@ -8,7 +8,7 @@
 
     <main class="container">
 
-        <div class="loading-watertank" style="width:500px; height:500px; background-color: pink;"></div>
+        <div id="watertank" style="width:500px; height:500px; background-color: pink;"></div>
 
         <section class="main-content">
 
@@ -23,12 +23,12 @@
     <script>
 
     var animData = {
-           wrapper: document.getElementById('loading-watertank'),
+           wrapper: document.getElementById('watertank'),
            animType: 'svg',
            loop: true,
            prerender: true,
            autoplay: true,
-           path: 'Loading-watertank.json'
+           path: 'loading.json'
        };
        var anim = bodymovin.loadAnimation(animData);
     </script>
