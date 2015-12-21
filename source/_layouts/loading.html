@@ -2,14 +2,14 @@
 <html>
   <head>
     {% include head.html %}
-
+    {% includes bodymovin.html %}
   </head>
   <body class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %}">
 
     <main class="container">
 
         <div class="loading-watertank" style="width:500px; height:500px; background-color: pink;"></div>
-        
+
         <section class="main-content">
 
           {{ content }}
@@ -20,5 +20,18 @@
     </main>
 
     {% include github-corner.html %}
+    <script>
+
+    var animData = {
+           wrapper: document.getElementById('loading-watertank'),
+           animType: 'svg',
+           loop: true,
+           prerender: true,
+           autoplay: true,
+           path: 'Loading-watertank.json'
+       };
+       var anim = bodymovin.loadAnimation(animData);
+    </script>
+
   </body>
 </html>{% endstrip %}
